@@ -1,14 +1,22 @@
 <template>
+  <AddTodo></AddTodo>
+  <filter-todos></filter-todos>
   <Todos></Todos>
 </template>
 
 <script>
 import Todos from "./components/Todos";
+import AddTodo from "./components/AddTodo";
+
+import FilterTodos from "./components/FilterTodos.vue";
 
 export default {
   name: "App",
   components: {
     Todos,
+    AddTodo,
+
+    FilterTodos,
   },
 };
 </script>
